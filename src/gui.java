@@ -21,6 +21,7 @@ public class gui extends JFrame {
     JTextField userfield;
 
     JLabel logininfo;
+    JTextField searchfield;
 
     public gui(){
         this.setTitle("TMDB api");
@@ -84,6 +85,8 @@ public class gui extends JFrame {
         userfield = new JTextField();
         passfield = new JPasswordField();
 
+        searchfield = new JTextField();
+
         logininfo = new JLabel("Not logged in yet");
 
         JPanel authpanel = new JPanel(new GridLayout(2,2));
@@ -94,5 +97,6 @@ public class gui extends JFrame {
 
         this.add(logininfo,BorderLayout.SOUTH);
         this.add(authpanel,BorderLayout.NORTH);
+        this.add(searchfield,BorderLayout.CENTER);
     }
 }
